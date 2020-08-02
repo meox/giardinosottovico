@@ -1,0 +1,132 @@
+body
+{
+  background:#FFF;
+  margin:9px;
+  font: 10pt/14pt 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  color:#555;
+}
+
+A:link{ color:#999999; text-decoration:none; }
+A:hover{ color:#6C8EFF; text-decoration:underline; }
+A:active{ color:#999999; text-decoration:none; }
+A:active:hover{ color:#6C8EFF; text-decoration:underline; }
+A:visited{ color:#999999; text-decoration:none; }
+A:visited:hover{ color:#999999; text-decoration:underline; }
+
+#gallery a{ color:#000; text-decoration:none; }
+#gallery a:hover{ color:#55f; text-decoration:none; }
+#gallery a:visited{ color:#000; text-decoration:none; }
+
+fieldset { border: 0px }
+
+#wrap
+{
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#sidebar
+{
+  float:left;
+  text-align:left;
+  width:150px;
+}
+
+#container
+{
+  width:800px;
+  margin-left:160px;
+  border-left:#CCCCCC 1px solid;
+}
+
+#content0
+{
+  width:800px;
+  padding:10px;
+  text-align:center;
+}
+
+#content1
+{
+  width:400px;
+  padding:20px;
+  float:left;
+  text-align:justify;
+}
+
+.content2
+{
+  min-height:600px;
+  padding:20px;
+  text-align:justify;
+}
+
+h3
+{
+  text-align:right;
+  color:#6C8EFF;
+  font-size:14pt;
+  font-weight:bold;
+}
+
+#title
+{
+  height:120px;
+  border-bottom:#CCCCCC 1px solid;
+  text-align:right;
+  font-size: 4em;
+  letter-spacing:2px; 
+  line-height: 1em;
+  color:#fff;
+}
+
+#footer
+{
+  text-align:center;
+  font-size:12px;
+  height:30px;
+  margin-top:10px;
+  border-top:#CCCCCC 1px solid;
+  text-transform:lowercase;
+}
+
+#navlist
+{
+  padding: 0 1px 1px;
+  margin-left: 0;
+  font: bold 12px Verdana, sans-serif;
+  background:#F3F3F3;
+  width: 13em;
+}
+
+#navlist li
+{
+  list-style: none;
+  margin: 0;
+  border-top:#CCCCCC 1px solid;
+  text-align: right;
+}
+
+#navlist li a
+{
+  display: block;
+  padding: 0.25em 0.5em 0.25em 0.75em;
+  background: #F3F3F3;
+  text-decoration: none;
+}
+
+#navlist li a:link { color: #6C8EFF; }
+#navlist li a:visited { color: #6C8EFF; }
+#navlist li a:hover
+{
+  border-color: #FE3;
+  color: #666666;
+  background: #FFFFFF;
+}
+
+@font-face
+{
+  font-family: KentuckyFriedChickenFont;
+  src: url(/css/KentuckyFriedChickenFont.ttf);
+}

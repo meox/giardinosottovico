@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en">
+    <head>
+        <title>Associazione Culturale GiardinoSottoVico - Orto Botanico e Giardino Terapeutico</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Il giardino &egrave; aperto a tutti e sar&agrave; presto visitabile dagli appassionati di piante grasse e succulente, da scolaresche, dai turisti e da quanti vogliano passare una giornata immersi nel verde" />
+        <meta name="keywords" content="giardino botanico orto terapeutico piante grasse succulente rare vico d'elsa firenze" />
+        <meta name="google-site-verification" content="CpmsqFWvKt79RE6WG-aO68G47cs256iBzGroTpb59IE" />
+
+        <link rel="icon" href="/images/favicon.ico" />
+
+        <script type="text/javascript" src="https://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAYqc8ktyyyX5EQVrT8E33_hQtLKP-zzW6bmNUV0pGYYrfLj-oCRTXHfrXeWVHMHxpwnBrTWqXn9CY-g"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <style type="text/css">
+            @font-face
+            {
+              font-family: KentuckyFriedChickenFont;
+              src: url('/css/KentuckyFriedChickenFont.ttf') format('truetype');
+            }
+
+            body {
+                background-color: #fff;
+                margin: 0px;
+            }
+
+            #cnt_photo {
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                opacity: 1.00;
+                overflow: none;
+                z-index: 0;
+            }
+
+            #title {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                vertical-align: middle;
+                text-align: center;
+                font-size: 45pt;
+                color: #000;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.65);
+                font-family: KentuckyFriedChickenFont;
+                z-index: 5;
+            }
+
+
+            .enter {
+                position: fixed;
+                bottom: 15%;
+                width: 100%;
+                text-align: center;
+                opacity: 1;
+                z-index: 7;
+            }
+
+            .orari {
+                background-color: rgba(255, 255, 255, 0.75);
+                border-radius: 5pt;
+                color: #000000;
+                font-size: 10pt;
+                top: 20%;
+                left: 3%;
+                padding: 10px;
+                position: fixed;
+                text-align: left;
+                width: 400px;
+                z-index: 6;
+            }
+
+
+            .events {
+                top: 40%;
+                left: 3%;
+                position: fixed;
+                text-align: left;
+                width: 400px;
+                z-index: 6;
+            }
+
+            .events-r {
+                top: 20%;
+                right: 3%;
+                position: fixed;
+                text-align: left;
+                width: 300px;
+                z-index: 6;
+            }
+
+            .block {
+                background-color: rgba(255, 255, 255, 0.75);
+                border-radius: 5pt;
+                color: #000000;
+                font-size: 10pt;
+                padding: 10px;
+                margin-top: 8px;
+                width: 300px;
+            }
+
+            #wrapper {
+                background-color: rgba(255, 255, 255, 0);
+                z-index: 6;
+                position: fixed;
+                bottom: 15%;
+                width: 100%;
+            }
+
+            #left {
+                background-color: rgba(255, 255, 255, 0.75);
+                border-radius: 5pt;
+                width: 300px;
+                height: 170px;
+                padding: 10px;
+                margin-right: 10px;
+            }
+
+            #middle {
+                width: 10px;
+            }
+
+            #right {
+                background-color: rgba(255, 255, 255, 0.75);
+                border-radius: 5pt;
+                width: 300px;
+                height: 170px;
+                padding: 10px;
+            }
+
+            .footer {
+                text-align: center;
+                font-family: Arial;
+                font-style: italic;
+                position: absolute;
+                font-size: 12pt;
+                width: 100%;
+                bottom: 5px;
+                background-color: rgba(255, 255, 255, 0.65);
+                z-index: 0;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="title">
+            <span style="font-family: KentuckyFriedChickenFont;">
+                Associazione Culturale il GiardinoSottoVico
+            </span>
+        </div>
+
+        <div id="cnt_photo">
+            <div class="footer">
+                Via Zambra, Vico d'Elsa (Firenze) 50021, cel. (+39) 331-4048373, tel. (+39) 055-7476313, PIVA. 05758050487
+            </div>
+        </div>
+
+
+        <div id="wrapper">
+            <div class="d-flex justify-content-center">
+                <div id="left">
+                    <span style="font-size: 12pt; font-weight:bold;">Attivit&agrave; botanica</span><br>
+                    <div style="border-top: 1px solid; height: 1px; width: 100%; clear: both;"></div>
+                    Per scoprire la bellezza e particolarit&agrave; delle piante grasse.
+                    <br>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="/index.php" class="btn-success btn-lg">Scopri il Giardino</a>
+                    </div>
+                </div>
+                <div id="middle"></div>
+                <div id="right">
+                    <span style="font-size: 12pt; font-weight:bold;">Attivit&agrave; sociali</span><br>
+                    <div style="border-top: 1px solid; height: 1px; width: 100%; clear: both;"></div>
+                    Per approfondire le attivit&agrave; sociali svolte al <u>GiardinoSottoVico</u>
+                    <br>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://letreeunquarto.wordpress.com" class="btn-primary btn-lg" target="_new">Le Tre e un Quarto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="orari">
+            <span style="font-size: 12pt; font-weight:bold;">Apertura</span><br>
+            <div style="border-top: 1px solid; height: 1px; width: 100%; clear: both;"></div>
+            <br>
+            <strong>Visitatori</strong> - Sab-Dom 10.00-12.00 e 14.30-19.00 <br>
+            Le serre sono visitabili anche dal Luned&igrave; al Venerd&igrave; su prenotazione<br>
+            contattare <strong>331-4048373</strong> o <strong>339-5249092</strong>
+        </div>
+        
+        <script>
+
+            const list_image = [
+                '002', '003', '004', '033',
+                '005', '006', '007', '008',
+                '009', '010', '011', '012',
+                '013', '014', '015', '016',
+                '017', '018', '019', '020',
+                '021', '022', '023', '024',
+                '025', '026', '027', '028',
+                '029', '030', '031', '032'
+            ];
+
+            function resize()
+            {
+                var h = $(window).height() - 4;
+                $("#cnt_photo").css('height', h + 'px');
+
+                // reposizioning events block
+                var t_orari = $("div.orari").position();
+                var h_orari = $("div.orari").height();
+                $("div.events").css('top', t_orari.top + h_orari + 30 + 'px');
+            }
+
+            function load_image(src, callback)
+            {
+                var img = new Image();
+                img.src = src;
+
+                img.onload = function() { 
+                    $("#cnt_photo").fadeOut(400, function(){
+                        $("#cnt_photo").css("background-image", 'url(' + src + ')');
+                        resize();
+                        $("#cnt_photo").fadeIn(800);
+                    });
+
+                    callback();
+                };
+            }
+
+            function cycle(i)
+            {
+                var index = 0;
+                if (typeof i === 'undefined')
+                {
+                    index = 0;
+                }
+                else
+                {
+                    index = i;
+                }
+
+                load_image('web_intro/' + list_image[index] + '.jpg', function(){
+                    setTimeout(function() {
+                        cycle ((index + 1) % list_image.length);
+                    }, 7000);
+                });
+
+            }
+
+            $(document).ready(function(){
+                $(window).resize(resize);
+                resize();
+                cycle();
+            });
+
+        </script>
+
+    </body>
+</html>
